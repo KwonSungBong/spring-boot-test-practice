@@ -32,5 +32,7 @@ dependencies {
 	runtime('mysql:mysql-connector-java')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('com.h2database:h2')
+	testCompile 'com.github.kstyrc:embedded-redis:0.6'
+	testCompile 'io.arivera.oss:embedded-rabbitmq:1.2.3'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
