@@ -1,0 +1,19 @@
+version: '2.1'
+
+services:
+  mysqldb1:
+    image: mysql:latest
+    ports:
+      - 3308:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: test
+  redis:
+    image: redis:latest
+    ports:
+      - "7777:6379/tcp"
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672/tcp"
+      - "5672:5672/tcp"
