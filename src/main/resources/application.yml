@@ -4,24 +4,18 @@ server:
 spring:
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: create-drop
     generate-ddl: false
     show-sql: false
     database-platform: org.hibernate.dialect.MySQL5Dialect
 
   datasource:
-    url: jdbc:mysql://localhost:3308/test?characterEncoding=utf8&useUnicode=true&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
-    username: root
+    url: jdbc:mysql://localhost:23306/testtest?useSSL=false&useUnicode=true&characterEncoding=utf8
+    username: testtest
     password: password
     driver-class-name: com.mysql.jdbc.Driver
 
   redis:
     host: localhost
     password:
-    port: 7777
-
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+    port: 26379
