@@ -8,5 +8,5 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_USER: testtest
-      MYSQL_PASSWORD: testtest
+      MYSQL_PASSWORD: password
       MYSQL_DATABASE: testtest

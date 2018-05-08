@@ -42,7 +42,7 @@ class TestRepositoryTests extends Specification {
         def test = "test+data"
 
         then:
-        test.equals "test+${data}"
+        test == "test+${data}"
     }
 
 }
